@@ -2,18 +2,18 @@
 
 Computer Science & AI graduate focused on **Python, production reliability, and applied AI product engineering**.
 
-I like turning real problems into things that ship — LLM-powered tools, clean data pipelines, and the tests and infrastructure that keep them reliable. Currently looking for **Applied AI Engineer / Forward Deployed Engineer / AI Product** roles.
+I build tools to solve problems I actually run into — then push to make them reliable and genuinely useful. What pulls me toward AI is the idea of assistants that can *act* for you without taking over: powerful in the right hands, and only as good as the person steering them. That belief shows up in what I build. Currently looking for **Applied AI Engineer / Forward Deployed Engineer / AI Product** roles.
 
 ---
 
 ## What I'm building
 
 **[RoleRadar AI](https://github.com/prowang01/roleradar-ai)** — an AI-assisted job tracker and role-fit analyzer
-A local-first Chrome extension + FastAPI backend + React dashboard. It captures job postings, tracks them through a drag-and-drop pipeline, and runs a two-stage GPT-4o-mini workflow with structured outputs to generate résumé-aware role-fit briefs. Built with explicit ethical constraints: human-triggered, no auto-apply, no background scraping.
+I kept circling the same LinkedIn postings with no good way to compare them, so I built a radar for it. A local-first Chrome extension + FastAPI backend + React dashboard that captures job postings, tracks them through a drag-and-drop pipeline, and runs a two-stage GPT-4o-mini workflow with structured outputs to generate résumé-aware role-fit briefs. Built human-in-the-loop by design: user-triggered, no auto-apply, no background scraping.
 `Python` · `FastAPI` · `React` · `Chrome Extension` · `GPT-4o-mini`
 
 **[Wardrobe Tracker](https://github.com/prowang01/wardrobe-tracker)** — a product I built to stop losing money on online orders
-Tracks every item from wishlist to refund across 9 lifecycle statuses, with a live financial dashboard (spent / pending refund / recovered) and per-brand insights. Ships with a demo video.
+Between buying, reselling, and returning clothes, I kept losing track of what I'd actually spent. So I built this: every item from wishlist to refund across 9 lifecycle statuses, a live financial dashboard (spent / pending refund / recovered), and per-brand insights. Ships with a demo video.
 `React` · `TypeScript` · `Vite`
 
 **[Fast Neural Style Transfer](https://github.com/prowang01/nst-project)** — a small GenAI / computer-vision project
@@ -46,7 +46,12 @@ Study abroad at **California State University, Long Beach** (2025)
 
 ---
 
+## Outside code
+
+Weightlifting taught me the discipline I bring to everything I build — showing up and finishing the job even when it stops being fun. Also into basketball, anime, and reconnecting with China this year after 10 years away.
+
+**Languages:** English (fluent) · French (native) · Mandarin (basic)
+
 ## Reach me
 
 [LinkedIn](https://linkedin.com/in/prosperwang) · prosperwangpro@gmail.com
-Languages: English (fluent) · French (native) · Mandarin (basic)
