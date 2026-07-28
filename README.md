@@ -9,7 +9,7 @@ I build tools to solve problems I actually run into — then push to make them r
 ## What I'm building
 
 **[RoleRadar AI](https://github.com/prowang01/roleradar-ai)** — an AI-assisted job tracker and role-fit analyzer
-I kept circling the same LinkedIn postings with no good way to compare them, so I built a radar for it. A local-first Chrome extension + FastAPI backend + React dashboard that captures job postings, tracks them through a drag-and-drop pipeline, and runs a two-stage GPT-4o-mini workflow with structured outputs to generate résumé-aware role-fit briefs. Built human-in-the-loop by design: user-triggered, no auto-apply, no background scraping.
+I kept circling the same LinkedIn postings with no good way to compare them, so I built a radar for it. A local-first Chrome extension + FastAPI backend + React dashboard: it captures postings, tracks them across a drag-and-drop kanban (Saved / Applied / Interview / Archived), and runs a two-stage GPT-4o-mini workflow with structured outputs to score each role across 5 dimensions and generate a résumé-aware brief. Human-in-the-loop by design: user-triggered, no auto-apply, no background scraping.
 `Python` · `FastAPI` · `React` · `Chrome Extension` · `GPT-4o-mini`
 
 **[Wardrobe Tracker](https://github.com/prowang01/wardrobe-tracker)** — a product I built to stop losing money on online orders
@@ -48,7 +48,7 @@ Study abroad at **California State University, Long Beach** (2025)
 
 ## Outside code
 
-Weightlifting taught me the discipline I bring to everything I build — showing up and finishing the job even when it stops being fun. Also into basketball, anime, and reconnecting with China this year after 10 years away.
+Weightlifting is the one that shaped me most — it's where I built the discipline I bring to everything else: showing up and finishing the job even when it stops being fun. I'm also big on fashion (more smart-value than designer — Bershka, Uniqlo, plus Gymshark and YoungLA for training), basketball, and anime. And I like discovering new places less for the travel itself than for widening my horizons — seeing how big the world actually is. This year I'm reconnecting with China after 10 years away.
 
 **Languages:** English (fluent) · French (native) · Mandarin (basic)
 
