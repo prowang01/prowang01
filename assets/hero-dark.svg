@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="hero-title hero-desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-labelledby="hero-title hero-desc">
   <title id="hero-title">Prosper Wang — Applied AI / Forward Deployed Engineer</title>
-  <desc id="hero-desc">Focus: Applied AI, AI Products, Deployment. Stack: Python, FastAPI, React, RAG, LLM APIs. Work: Skim, RoleRadar AI, Wardrobe Tracker. A quiet abstract illustration connects three input modules to a central system and one output path.</desc>
-  <rect x="1" y="1" width="1198" height="338" rx="10" fill="#0b1320" stroke="#2a394a" />
+  <desc id="hero-desc">Focus: Applied AI, AI Products, Deployment. A quiet abstract illustration connects three input modules to a central system and one output path.</desc>
+  <rect x="1" y="1" width="1198" height="248" rx="10" fill="#0b1320" stroke="#2a394a" />
   <path d="M 52 27 H 228" stroke="#7bdfd4" stroke-width="2" />
   <path d="M 1146 27 H 1173 V 54" fill="none" stroke="#7bdfd4" stroke-opacity="0.35" />
   <g font-family="Arial, Helvetica, sans-serif">
@@ -12,16 +12,12 @@
   <g font-family="Arial, Helvetica, sans-serif" font-size="40">
     <g fill="#9db2c5" font-weight="600">
       <text x="52" y="223">FOCUS</text>
-      <text x="52" y="268">STACK</text>
-      <text x="52" y="313">WORK</text>
     </g>
     <g fill="#cbd8e4">
       <text x="220" y="223">Applied AI · AI Products · Deployment</text>
-      <text x="220" y="268">Python · FastAPI · React · RAG · LLM APIs</text>
-      <text x="220" y="313">Skim · RoleRadar AI · Wardrobe Tracker</text>
     </g>
   </g>
-  <g aria-hidden="true">
+  <g aria-hidden="true" transform="translate(0,-85)">
     <path d="M 996 191 H 1180 M 996 311 H 1180 M 1007 183 V 319 M 1178 183 V 319" fill="none" stroke="#687d92" stroke-opacity="0.1" />
     <g fill="#111e2e" stroke="#7bdfd4" stroke-opacity="0.35">
       <rect x="1008" y="194" width="28" height="24" rx="3" />

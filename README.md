@@ -1,12 +1,12 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
-  <img src="assets/hero-light.svg" width="100%" alt="Prosper Wang — Applied AI / Forward Deployed Engineer. Focus: Applied AI · AI Products · Deployment. Stack: Python · FastAPI · React · RAG · LLM APIs. Work: Skim · RoleRadar AI · Wardrobe Tracker." />
+  <img src="assets/hero-light.svg" width="100%" alt="Prosper Wang — Applied AI / Forward Deployed Engineer. Focus: Applied AI · AI Products · Deployment." />
 </picture>
 
 I'm **Prosper Wang**, an engineer focused on applied AI and forward-deployed product work.
 
-I build end-to-end AI products with Python, FastAPI, React, retrieval systems, and LLM APIs.
+I start with the problem: understand the workflow, find where AI adds real value, and build the system around it.
 
 **Currently looking for:** Forward Deployed Engineer · Applied AI Engineer · AI Product Engineer roles.
 
