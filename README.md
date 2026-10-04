@@ -1,88 +1,64 @@
-<p align="center">
-  <img src="assets/hero.svg" width="100%" alt="Prosper Wang — Applied AI Systems. Forward Deployed Engineering, AI Product, and Reliability. Ambiguity → Working System → Evidence → Impact." />
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
+  <img src="assets/hero-light.svg" width="100%" alt="Prosper Wang — Applied AI / Forward Deployed Engineer. Focus: Applied AI · AI Products · Deployment. Stack: Python · FastAPI · React · RAG · LLM APIs. Work: Skim · RoleRadar AI · Wardrobe Tracker." />
+</picture>
 
-I'm **Prosper**, an engineer focused on applied AI and forward-deployed product work. I turn ambiguous workflows into working systems, then make the important failure modes visible and testable.
+I'm **Prosper Wang**, an engineer focused on applied AI and forward-deployed product work.
 
-**Currently targeting:** Forward Deployed Engineer · Applied AI Engineer · AI Product Engineer · hands-on AI Solutions / Deployment roles.
+I build end-to-end AI products with Python, FastAPI, React, retrieval systems, and LLM APIs.
 
-## // MISSION
+**Currently looking for:** Forward Deployed Engineer · Applied AI Engineer · AI Product Engineer roles.
 
-Start with the user's decision or workflow, then build the smallest useful system around it. The model is part of that system: interfaces, data, retrieval, persistence, and reliability matter just as much.
+## Selected work
 
-I prefer systems you can inspect, boundaries you can test, and trade-offs you can explain in terms of the user or business outcome.
+### [Skim](https://github.com/prowang01/skim)
 
-## // SELECTED SYSTEMS
+Multimodal video Q&A system with retrieval, timestamp citations, and evaluation.
 
-### [Skim](https://github.com/prowang01/skim) · Multimodal video Q&A
+- Local `faster-whisper` transcription + sampled video frames + vision descriptions + embeddings.
+- Adaptive retrieval with adjacent and cross-modal context. Saved 7-video / 19-question evaluation: **17.5/19 vs 17.0/19** for a full-context baseline — small judge-scored evaluation, not general superiority.
 
-Ask questions about what a video says and shows, with timestamped evidence.
+### [RoleRadar AI](https://github.com/prowang01/roleradar-ai)
 
-- Local `faster-whisper` transcription and vision-described sampled frames, embedded into one timeline/index.
-- Adaptive semantic retrieval with adjacent context and cross-modal temporal expansion; timestamp citations and explicit coverage-gap / motion blind-spot handling.
-- Saved evaluation: **17.5/19 vs. 17.0/19** for a full-context baseline, across **7 videos / 19 questions**. A small judge-scored snapshot, not evidence of general superiority.
+Local-first LinkedIn job tracker with browser capture, FastAPI backend, React dashboard, and optional AI role analysis.
 
-**Signal:** multimodal retrieval, evaluation, and engineering trade-offs. Cross-encoder reranking was tested and left off by default when the evidence did not justify it.
+- Chrome MV3 → FastAPI / SQLAlchemy / SQLite → React / TypeScript.
+- Separate user-triggered OpenAI brief / fit analysis calls using JSON mode; optional profile and extracted resume context for fit analysis. Briefs use job context only.
 
-### [RoleRadar AI](https://github.com/prowang01/roleradar-ai) · Local-first job tracking & role analysis
+### [Wardrobe Tracker](https://github.com/prowang01/wardrobe-tracker)
 
-Capture a LinkedIn posting, track the application, and decide whether the role deserves attention.
+Personal frontend product for tracking clothing purchases, returns, refunds, and resale.
 
-- Chrome MV3 integration with multi-strategy DOM extraction → FastAPI + SQLAlchemy/SQLite → React/TypeScript dashboard with a drag-and-drop pipeline.
-- Deterministic mock analyzer; optional OpenAI brief and fit analysis are **separate, user-triggered calls using JSON mode**. Fit analysis can use profile and extracted resume context and returns one overall score/verdict; briefs use job context only.
-- A saved brief can enrich later fit analysis but is optional. Backend smoke tests cover the local workflow; extraction and AI limitations are documented explicitly.
+- React + TypeScript + Vite.
+- Browser-local `localStorage`, status-derived financial summaries, and deterministic domain tests.
 
-**Signal:** end-to-end product engineering, browser integration, persistence, and human-in-the-loop AI design around an unstable external interface.
+## Experience
 
-### [Wardrobe Tracker](https://github.com/prowang01/wardrobe-tracker) · Purchase lifecycle & frontend product
+### Doctolib — Solutions Engineer Intern, 2026
 
-A personal tracker for clothing purchases, returns, and refunds.
+- Automated testing / reliability for a healthcare EHR data-transformation pipeline: **272 tests** across unit, component, contract, and integration levels.
+- Pydantic contract testing across **24 adapter configurations**; GitHub Actions CI/CD.
 
-- React + TypeScript + Vite; browser-local `localStorage` persistence.
-- Nine lifecycle statuses drive financial summaries, filtering, and brand insights, with deterministic domain tests.
+### H-GenAI Paris — 2nd place
 
-**Signal:** product ownership, usable workflows, and frontend state / domain modeling.
+Four-person team building a data-quality anomaly detection / SQL generation prototype at the Sia Partners / AWS / NVIDIA / Mistral AI hackathon. I built the **Streamlit frontend**. [Collaborative repository](https://github.com/Kir-w/HackathonGenAI-WZSolutions).
 
-## // FIELD SIGNAL
+## Stack
 
-**Doctolib · Solutions Engineer Intern, 2026**<br>
-Reliability and testing for a healthcare EHR data-transformation pipeline: an automated framework with **272 tests** across unit, component, contract, and integration levels; Pydantic contract testing across **24 adapter configurations**; GitHub Actions CI/CD.
+**Languages:** Python · TypeScript · JavaScript · SQL<br>
+**Backend / Product:** FastAPI · React · Streamlit<br>
+**Applied AI:** OpenAI API · RAG · multimodal retrieval · LLM workflows<br>
+**Data / Reliability:** Pydantic · SQLAlchemy · SQLite · GitHub Actions · pytest
 
-**H-GenAI Paris · 2nd place, four-person team**<br>
-Built a data-quality prototype around anomaly detection and SQL generation during the Sia Partners / AWS / NVIDIA / Mistral AI hackathon. I built the **Streamlit frontend**. [Collaborative repository](https://github.com/Kir-w/HackathonGenAI-WZSolutions).
+## Background
 
-## // OPERATING MODEL
+**ESILV** — Computer Science / Data & AI, 2023–2026<br>
+**California State University, Long Beach** — Exchange, 2025
 
-```text
-AMBIGUITY
-  → frame the decision / workflow
-  → build the smallest useful system
-  → evaluate failure modes
-  → harden the boundaries
-  → iterate from evidence
-```
+French — native · English — fluent · Mandarin — basic<br>
+Weightlifting · basketball · fashion · travel
 
-I use AI tools as leverage for implementation and exploration, then verify outputs at important system boundaries: data contracts, model responses, persistence, and user-visible behavior.
-
-## // TOOLKIT
-
-| Area | Tools & practices |
-| --- | --- |
-| Languages | Python · TypeScript · JavaScript · SQL |
-| Product & APIs | FastAPI · React · Streamlit |
-| Applied AI | OpenAI API · RAG · multimodal retrieval · LLM workflows |
-| Data & contracts | Pydantic · SQLAlchemy · SQLite |
-| Verification | pytest / unittest · GitHub Actions |
-| Data & ML | NumPy · pandas · scikit-learn |
-
-## // BACKGROUND
-
-**ESILV** · Computer Science / Data & AI, 2023–2026<br>
-**California State University, Long Beach** · Exchange, 2025
-
-**Languages:** French — native · English — fluent · Mandarin — basic.<br>
-**Outside code:** weightlifting, basketball, fashion, and discovering new places.
-
-## // CONNECT
+## Contact
 
 [LinkedIn](https://linkedin.com/in/prosperwang) · [prosperwangpro@gmail.com](mailto:prosperwangpro@gmail.com)
