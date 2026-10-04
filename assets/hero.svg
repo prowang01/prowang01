@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="hero-title hero-desc">
+  <title id="hero-title">Prosper Wang — Applied AI Systems</title>
+  <desc id="hero-desc">Forward Deployed Engineering, AI Product, and Reliability. An engineering workflow from ambiguity to working system to evidence to impact. Build, evaluate, deploy, iterate.</desc>
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1828" />
+      <stop offset="1" stop-color="#070d18" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#67e8df" />
+      <stop offset="0.65" stop-color="#3985ad" />
+      <stop offset="1" stop-color="#7675b5" />
+    </linearGradient>
+    <radialGradient id="ambient" cx="85%" cy="15%" r="70%">
+      <stop offset="0" stop-color="#193850" stop-opacity="0.42" />
+      <stop offset="1" stop-color="#193850" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 H 0 V 40" fill="none" stroke="#92b6cd" stroke-opacity="0.055" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="340" rx="14" fill="url(#base)" />
+  <rect width="1200" height="340" rx="14" fill="url(#ambient)" />
+  <rect x="1" y="1" width="1198" height="338" rx="13" fill="url(#grid)" stroke="#26374b" />
+  <path d="M 24 54 V 24 H 54 M 1146 24 H 1176 V 54 M 24 286 V 316 H 54 M 1146 316 H 1176 V 286" fill="none" stroke="#67e8df" stroke-opacity="0.55" stroke-width="1.5" />
+  <path d="M 56 29 H 1144" stroke="url(#accent)" stroke-opacity="0.42" />
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="56" y="58" fill="#a8bccb" font-size="14" letter-spacing="3">ENGINEERING / PORTFOLIO</text>
+    <text x="52" y="119" fill="#f1f6fb" font-size="60" font-weight="700" letter-spacing="1.5">PROSPER WANG</text>
+    <text x="56" y="158" fill="#80eee4" font-size="26" font-weight="600" letter-spacing="3">APPLIED AI SYSTEMS</text>
+    <text x="56" y="190" fill="#c3d1df" font-size="18" letter-spacing="0.65">FORWARD DEPLOYED ENGINEERING · AI PRODUCT · RELIABILITY</text>
+  </g>
+
+  <g fill="none" stroke-linecap="round" aria-hidden="true">
+    <path d="M 917 62 V 181" stroke="#2a4055" />
+    <circle cx="1041" cy="122" r="58" stroke="#497596" stroke-opacity="0.35" />
+    <path d="M 990 93 A 58 58 0 0 1 1091 151" stroke="#70e4da" stroke-opacity="0.5" />
+    <circle cx="1041" cy="122" r="35" stroke="#777bc0" stroke-opacity="0.35" />
+    <path d="M 949 122 H 1005 M 1077 122 H 1137 M 1041 45 V 86 M 1041 158 V 192" stroke="#40627d" stroke-opacity="0.6" />
+    <path d="M 1005 122 L 1041 102 L 1077 122 L 1041 142 Z M 1041 102 V 142" stroke="#70e4da" stroke-opacity="0.5" />
+    <circle cx="1041" cy="102" r="3" fill="#80eee4" stroke="#80eee4" />
+    <circle cx="1005" cy="122" r="3" fill="#427991" stroke="#427991" />
+    <circle cx="1077" cy="122" r="3" fill="#777bc0" stroke="#777bc0" />
+  </g>
+
+  <path d="M 56 215 H 1144" stroke="#263a4e" />
+  <g fill="#0d1c2b" stroke="#284758">
+    <rect x="56" y="234" width="238" height="44" rx="5" />
+    <rect x="338" y="234" width="264" height="44" rx="5" />
+    <rect x="646" y="234" width="238" height="44" rx="5" />
+    <rect x="928" y="234" width="216" height="44" rx="5" />
+  </g>
+  <g fill="#d8e6ee" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" letter-spacing="1.1" text-anchor="middle">
+    <text x="175" y="263">AMBIGUITY</text>
+    <text x="470" y="263" fill="#80eee4">WORKING SYSTEM</text>
+    <text x="765" y="263">EVIDENCE</text>
+    <text x="1036" y="263">IMPACT</text>
+  </g>
+  <g fill="none" stroke="#76c7c7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M 305 256 H 326 M 321 251 L 326 256 L 321 261" />
+    <path d="M 613 256 H 634 M 629 251 L 634 256 L 629 261" />
+    <path d="M 895 256 H 916 M 911 251 L 916 256 L 911 261" />
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="2">
+    <text x="56" y="313" fill="#a8bccb">BUILD // EVALUATE // DEPLOY // ITERATE</text>
+    <path d="M 1076 308 H 1100 M 1108 308 H 1132" stroke="url(#accent)" stroke-width="2" aria-hidden="true" />
+  </g>
+</svg>

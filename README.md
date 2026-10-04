@@ -1,63 +1,88 @@
-# Hi, I'm Prosper 👋
+<p align="center">
+  <img src="assets/hero.svg" width="100%" alt="Prosper Wang — Applied AI Systems. Forward Deployed Engineering, AI Product, and Reliability. Ambiguity → Working System → Evidence → Impact." />
+</p>
 
-Computer Science & AI graduate focused on **Python, production reliability, and applied AI product engineering**.
+I'm **Prosper**, an engineer focused on applied AI and forward-deployed product work. I turn ambiguous workflows into working systems, then make the important failure modes visible and testable.
 
-I build tools to solve problems I actually run into — then push to make them reliable and genuinely useful. What pulls me toward AI is the idea of assistants that can *act* for you without taking over: powerful in the right hands, and only as good as the person steering them. That belief shows up in what I build. Currently looking for **Applied AI Engineer / Forward Deployed Engineer / AI Product** roles.
+**Currently targeting:** Forward Deployed Engineer · Applied AI Engineer · AI Product Engineer · hands-on AI Solutions / Deployment roles.
 
----
+## // MISSION
 
-## What I'm building
+Start with the user's decision or workflow, then build the smallest useful system around it. The model is part of that system: interfaces, data, retrieval, persistence, and reliability matter just as much.
 
-**[RoleRadar AI](https://github.com/prowang01/roleradar-ai)** — an AI-assisted job tracker and role-fit analyzer
+I prefer systems you can inspect, boundaries you can test, and trade-offs you can explain in terms of the user or business outcome.
 
-I kept circling the same LinkedIn postings with no good way to compare them, so I built a radar for it. A local-first Chrome extension + FastAPI backend + React dashboard: it captures postings, tracks them across a drag-and-drop kanban (Saved / Applied / Interview / Archived), and runs a two-stage GPT-4o-mini workflow with structured outputs to score each role across 5 dimensions and generate a résumé-aware brief. Human-in-the-loop by design: user-triggered, no auto-apply, no background scraping.
-`Python` · `FastAPI` · `React` · `Chrome Extension` · `GPT-4o-mini`
+## // SELECTED SYSTEMS
 
-**[Wardrobe Tracker](https://github.com/prowang01/wardrobe-tracker)** — a product I built to stop losing money on online orders
+### [Skim](https://github.com/prowang01/skim) · Multimodal video Q&A
 
-Between buying, reselling, and returning clothes, I kept losing track of what I'd actually spent. So I built this: every item from wishlist to refund across 9 lifecycle statuses, a live financial dashboard (spent / pending refund / recovered), and per-brand insights. Ships with a demo video.
-`React` · `TypeScript` · `Vite`
+Ask questions about what a video says and shows, with timestamped evidence.
 
-**[Fast Neural Style Transfer](https://github.com/prowang01/nst-project)** — a small GenAI / computer-vision project
+- Local `faster-whisper` transcription and vision-described sampled frames, embedded into one timeline/index.
+- Adaptive semantic retrieval with adjacent context and cross-modal temporal expansion; timestamp citations and explicit coverage-gap / motion blind-spot handling.
+- Saved evaluation: **17.5/19 vs. 17.0/19** for a full-context baseline, across **7 videos / 19 questions**. A small judge-scored snapshot, not evidence of general superiority.
 
-Blends a photo with an artwork's style using a pre-trained TensorFlow Hub model, wrapped in a Streamlit app.
-`Python` · `TensorFlow Hub` · `Streamlit`
+**Signal:** multimodal retrieval, evaluation, and engineering trade-offs. Cross-encoder reranking was tested and left off by default when the evidence did not justify it.
 
----
+### [RoleRadar AI](https://github.com/prowang01/roleradar-ai) · Local-first job tracking & role analysis
 
-## Experience & highlights
+Capture a LinkedIn posting, track the application, and decide whether the role deserves attention.
 
-- **Solutions Engineer Intern @ Doctolib** (2026) — built the automated testing framework for a healthcare EHR data-transformation pipeline: 272 tests across 4 levels (unit / component / contract / integration), a Pydantic-based contract-testing layer validating 24 medical-software adapter configs, and the GitHub Actions CI/CD pipeline.
-  
-- **2nd place, H-GenAI Paris** (Sia Partners · AWS · NVIDIA · Mistral AI) — as part of a 4-person team, I built the Streamlit frontend for a 48h RAG agent that detects data-quality anomalies and generates SQL.
+- Chrome MV3 integration with multi-strategy DOM extraction → FastAPI + SQLAlchemy/SQLite → React/TypeScript dashboard with a drag-and-drop pipeline.
+- Deterministic mock analyzer; optional OpenAI brief and fit analysis are **separate, user-triggered calls using JSON mode**. Fit analysis can use profile and extracted resume context and returns one overall score/verdict; briefs use job context only.
+- A saved brief can enrich later fit analysis but is optional. Backend smoke tests cover the local workflow; extraction and AI limitations are documented explicitly.
 
----
+**Signal:** end-to-end product engineering, browser integration, persistence, and human-in-the-loop AI design around an unstable external interface.
 
-## Tech I work with
+### [Wardrobe Tracker](https://github.com/prowang01/wardrobe-tracker) · Purchase lifecycle & frontend product
 
-**AI / GenAI:** RAG, LLM agents, prompt engineering, structured outputs, OpenAI API (GPT-4o-mini)
-**Languages:** Python, SQL, TypeScript, JavaScript
-**Backend & Product:** FastAPI, Flask, Node.js, React, Streamlit
-**Data & ML:** pandas, NumPy, scikit-learn
-**Testing & CI/CD:** pytest, Hypothesis, GitHub Actions
+A personal tracker for clothing purchases, returns, and refunds.
 
----
+- React + TypeScript + Vite; browser-local `localStorage` persistence.
+- Nine lifecycle statuses drive financial summaries, filtering, and brand insights, with deterministic domain tests.
 
-## Education
+**Signal:** product ownership, usable workflows, and frontend state / domain modeling.
 
-**ESILV** — Master's in Computer Science, Major in Data & AI (2023–2026)
+## // FIELD SIGNAL
 
-Study abroad at **California State University, Long Beach** (2025)
+**Doctolib · Solutions Engineer Intern, 2026**<br>
+Reliability and testing for a healthcare EHR data-transformation pipeline: an automated framework with **272 tests** across unit, component, contract, and integration levels; Pydantic contract testing across **24 adapter configurations**; GitHub Actions CI/CD.
 
----
+**H-GenAI Paris · 2nd place, four-person team**<br>
+Built a data-quality prototype around anomaly detection and SQL generation during the Sia Partners / AWS / NVIDIA / Mistral AI hackathon. I built the **Streamlit frontend**. [Collaborative repository](https://github.com/Kir-w/HackathonGenAI-WZSolutions).
 
-## Outside code
+## // OPERATING MODEL
 
-Weightlifting is the one that shaped me most — it's where I built the discipline I bring to everything else: showing up and finishing the job even when it stops being fun. I'm also big on fashion (more smart-value than designer — Bershka, Uniqlo, plus Gymshark and YoungLA for training), basketball, and anime. And I like discovering new places less for the travel itself than for widening my horizons — seeing how big the world actually is. This year I'm reconnecting with China after 10 years away.
-Also never saying no to a pool game or foosball !
+```text
+AMBIGUITY
+  → frame the decision / workflow
+  → build the smallest useful system
+  → evaluate failure modes
+  → harden the boundaries
+  → iterate from evidence
+```
 
-**Languages:** English (fluent) · French (native) · Mandarin (basic)
+I use AI tools as leverage for implementation and exploration, then verify outputs at important system boundaries: data contracts, model responses, persistence, and user-visible behavior.
 
-## Reach me
+## // TOOLKIT
 
-[LinkedIn](https://linkedin.com/in/prosperwang) · prosperwangpro@gmail.com
+| Area | Tools & practices |
+| --- | --- |
+| Languages | Python · TypeScript · JavaScript · SQL |
+| Product & APIs | FastAPI · React · Streamlit |
+| Applied AI | OpenAI API · RAG · multimodal retrieval · LLM workflows |
+| Data & contracts | Pydantic · SQLAlchemy · SQLite |
+| Verification | pytest / unittest · GitHub Actions |
+| Data & ML | NumPy · pandas · scikit-learn |
+
+## // BACKGROUND
+
+**ESILV** · Computer Science / Data & AI, 2023–2026<br>
+**California State University, Long Beach** · Exchange, 2025
+
+**Languages:** French — native · English — fluent · Mandarin — basic.<br>
+**Outside code:** weightlifting, basketball, fashion, and discovering new places.
+
+## // CONNECT
+
+[LinkedIn](https://linkedin.com/in/prosperwang) · [prosperwangpro@gmail.com](mailto:prosperwangpro@gmail.com)
